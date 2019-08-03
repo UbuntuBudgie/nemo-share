@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 12),
                intltool (>= 0.29),
                libglib2.0-dev (>= 2.35.9),
                libnemo-extension-dev,
-               libcinnamon-desktop-dev (>= 3.0.0),
+               libcinnamon-desktop-dev (>= 4.0.0),
                python3,
                dh-python
 Standards-Version: 4.4.0
