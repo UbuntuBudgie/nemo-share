@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --with=python3
+
+override_dh_auto_build:
+	dh_auto_build
+	cd po; intltool-update -p --verbose
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/nemo-share -name '*.*a' -delete

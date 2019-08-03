@@ -1,0 +1,4 @@
+version=3
+http://packages.linuxmint.com/pool/backport/n/nemo-share/ \
+    nemo-share_([\d.]+)%2b[\w\d]+\.tar\.gz
+
